@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Leftbar from '../Components/Leftbar';
 import Navbar from '../Components/Navbar';
-import { useNavigate } from 'react-router-dom';
 
 const Register = ({ color, setColor }) => {
   const [register, setRegister] = useState(false);
-  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     hospitalName: '',
     address: '',
@@ -75,10 +73,6 @@ const Register = ({ color, setColor }) => {
       console.error('Error:', error);
       alert('Internal Server Error');
     }
-  };
-
-  const handleClicked = () => {
-    navigate('/login'); 
   };
 
   useEffect(() => {

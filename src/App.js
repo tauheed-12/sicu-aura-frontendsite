@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 import Register from "./Pages/Register";
 import Login from "./Pages/Login";
 import CaputerFace from "./Pages/CaputerFace";
